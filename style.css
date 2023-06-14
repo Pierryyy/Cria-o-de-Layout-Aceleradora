@@ -135,7 +135,12 @@ td {
 #input-new-task-night {
     width: 20em;
     border-radius: 10em;
+    color: #fff;
 }
+::placeholder {
+    color: #fff;
+    opacity: 1;
+  }
 
 #btn-new-task,
 #btn-new-task-night {
