@@ -3,17 +3,33 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 :root {
     font-size: 62.5%;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #797979;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #9e9ea0;
+  }
+
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 .icon {
     width: 20em;
-    background: rgba(121, 121, 121, 0.555);
+    background: #797979;
     border-radius: 10em;
 }
+
 aside {
     margin: 0 10em;
     width: 32em;
@@ -21,52 +37,64 @@ aside {
     flex-direction: column;
     align-items: center;
 }
+
 aside h1 {
     font-size: 3.2em;
     margin: 1em;
 }
+
 aside p {
     font-size: 1.8em;
     width: 16em;
     text-align: center;
     margin-bottom: 1em;
 }
+
 aside li {
     margin: 0.5em;
+    list-style-type: none;
 }
+
 aside a {
     font-size: 2em;
+    text-decoration: none;
 }
+
 .page {
     display: flex;
     margin-top: 5em;
-    
 }
+
 .page img {
     width: 100%;
     height: auto;
 }
+
 main {
     background: rgba(121, 121, 121, 0.555);
     min-width: 100em;
     border: 1px solid;
     margin: 0 10em;
 }
+
 .model-tables {
     display: flex;
     gap: 5px;
     padding: 0 15px;
 }
+
 main h1 {
     text-align: center;
     font-size: 3.2em;
     margin: 20px;
 }
+
 main h2 {
     text-align: center;
     font-size: 2.2em;
     margin: 5px;
 }
+
 main table {
     background: #fff;
     color: #000;
@@ -74,45 +102,60 @@ main table {
     padding: 0 2em;
     display: flex;
     height: 50em;
+    overflow-x: hidden;
 }
-main th, td{
+
+main th,
+td {
     padding: 10px;
     min-width: 20em;
     font-size: 2.2em;
-    }
+}
 
 .add-item {
- margin: 4em auto;
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 0.5em;
+    margin: 4em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
 }
-#input-new-task, #btn-new-task, #input-new-task-night, #btn-new-task-night {
+
+#input-new-task,
+#btn-new-task,
+#input-new-task-night,
+#btn-new-task-night {
     border: none;
     font-size: 1.5em;
     outline: none;
     padding: 1em;
     background: #666;
 }
-#input-new-task, #input-new-task-night {
+
+#input-new-task,
+#input-new-task-night {
     width: 20em;
     border-radius: 10em;
 }
-#btn-new-task, #btn-new-task-night {
+
+#btn-new-task,
+#btn-new-task-night {
     color: #fff;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     cursor: pointer;
 }
-#to-do-list-day, #to-do-list-night {
+
+#to-do-list-day,
+#to-do-list-night {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 0;
 }
-#to-do-list-day li, #to-do-list-night li {
+
+#to-do-list-day li,
+#to-do-list-night li {
     list-style-type: disc;
     text-transform: capitalize;
     display: flex;
@@ -132,8 +175,8 @@ main th, td{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
 }
+
 .buttons {
     display: flex;
 }
